@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ice Cream Shop</title>
+<style>
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #fff0f5;
+}
+
+header {
+    background: #ff69b4;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background: #ffb6c1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+ #home {
+    background: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+    width: 200px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form input, form select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>🍦 Ice Cream Shop</h1>
+<p>Delicious & Fresh Ice Cream</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#order">Order</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+<h2>Welcome</h2>
+<p>Enjoy the best strawberry ice creams!</p>
+</section>
+
+<!-- MENU -->
+<section id="menu">
+<h2>Our Menu</h2>
+<div class="products">
+
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNVZdPs7rdgw8bo5zwjc3MPPhdF50sqGOM4g&s"><h3>Chocolate</h3><button onclick="selectItem('Chocolate')">Order</button></div>
+<div class="card"><img src="https://images.immediate.co.uk/production/volatile/sites/30/2026/03/Dates-be9fb34.jpg?quality=90&resize=556,505"><h3>Vanilla</h3><button onclick="selectItem('Vanilla')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQilfChWLyizI440uye0VXoEpf7zcuZjg3Aug&s"><h3>Strawberry</h3><button onclick="selectItem('Strawberry')">Order</button></div>
+
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn3KMQYkA8Myv1aD1aILrYPlU5HP2UHgcMbA&s"><h3>Mango</h3><button onclick="selectItem('Mango')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-92VYZSMkasqtydEKVyjI8KF6odBF5uOmZA&s"><h3>Butterscotch</h3><button onclick="selectItem('Butterscotch')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYx-Yy2IXlBuK26v4dIAf3MePWozXnq4wUvQ&s"><h3>Pista</h3><button onclick="selectItem('Pista')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_YOT9C7f0ERSqwSrMW02qRvyN1Zzhl10uEA&s"><h3>Black Currant</h3><button onclick="selectItem('Black Currant')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR-vQntLbX_AgH0sTOBpSRDFSS-T8NHVMqhQ&s"><h3>Blueberry</h3><button onclick="selectItem('Blueberry')">Order</button></div>
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5465pO_oTlYNPZBd2j83xIY8TZXKYC776Jw&s"><h3>Kulfi</h3><button onclick="selectItem('Kulfi')">Order</button></div>
+<div class="card"><img src="https://media.istockphoto.com/id/488474233/photo/ice-cream-sundae.jpg?s=612x612&w=0&k=20&c=Hz-oHN6JE9woHSUugRHOWB5HHCtBGjBNHMkINcYX-mA="><h3>Caramel</h3><button onclick="selectItem('Caramel')">Order</button></div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Our Shop</h2>
+
+<p>
+Welcome to our Ice Cream Shop! 🍦 We serve fresh, delicious, and high-quality ice creams made with the best ingredients.
+</p>
+
+<p>
+We offer many flavors like Chocolate, Vanilla, Strawberry, Mango, Pista, and more. Our goal is to make every customer happy with tasty treats and friendly service.
+</p>
+
+<p>
+Our shop is clean, safe, and perfect for families and friends to enjoy sweet moments together. Visit us and experience the joy of ice cream!
+</p>
+
+</section>
+
+<!-- ORDER -->
+<section id="order">
+<h2>Place Your Order</h2>
+<form onsubmit="placeOrder(event)">
+<input type="text" id="name" placeholder="Your Name" required><br>
+<input type="text" id="item" placeholder="Selected Ice Cream" readonly required><br>
+<select id="qty">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select><br>
+<button type="submit">Confirm Order</button>
+</form>
+<p id="msg"></p>
+</section>
+
+<script>
+function selectItem(item) {
+    document.getElementById("item").value = item;
+    window.location.href = "#order";
+}
+
+function placeOrder(e) {
+    e.preventDefault();
+    let name = document.getElementById("name").value;
+    let item = document.getElementById("item").value;
+    let qty = document.getElementById("qty").value;
+
+    document.getElementById("msg").innerHTML =
+        "✅ Order placed by " + name + " for " + qty + " " + item + " ice cream!";
+}
+</script>
+
+</body>
+</html>
